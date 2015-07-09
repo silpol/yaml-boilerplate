@@ -1,0 +1,21 @@
+project_name: myproject
+project_root: /var/projects/myproject
+project_repo: git@bitbucket.org:username/myproject.git
+system_packages:
+  - build-essential
+  - git
+  - libevent-dev
+  - nginx
+  - postgresql
+  - postgresql-server-dev-all
+  - python-dev
+  - python-setuptools
+  - redis-server
+  - postfix
+  - yui-compressor
+python_packages:
+  - pip
+  - virtualenv
+initfiles:
+  - backend
+  - gunicorn
